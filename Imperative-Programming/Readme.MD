@@ -504,6 +504,7 @@ struct Example {
     int x;
     int y;
 };
+```
 
 To create a variable of a struct type, you can use the name of the struct followed by a variable name. For example:
 ```C 
