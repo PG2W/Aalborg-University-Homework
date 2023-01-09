@@ -607,6 +607,21 @@ short, short int, long, long int, char, unsigned int, signed long int
 
 Talkonstanten 012LU = Heltallet med ciferene 1 og 2 i oktal notation, i typen unsigned long int. Værdien der med %li i printf er 10, fordi 12 i oktal er 10 i decimalt.
 
+- Den tomme streng i C er af længden 0
+- Tekststrenge afsluttes af 0-tegnet, "\0", null terminator.
+- Lovlige initialiseringer af tekststrenge:
+	char str[] = {'1', '2', '3'}
+	char str[] = "123";
+	char *str = "123";
+	char str[3] = "1";
+	
+- Ulovlige initialiseringer
+	char str[3] = "123"; (det udskrives men pga null terminatoren, så vil der forekomme et random karakter til sidst)
+	char str[] = '1' (da det allerede er erklæret som en streng, kan man ikke assign i char form med ''.
+
+En tom streng er et array med mindst et element, hvor det første tegn er \0.
+
+
 
 TODO:
 ### Recursion = 542 (Problem Solving and Program Design in C)
