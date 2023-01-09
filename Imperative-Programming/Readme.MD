@@ -566,6 +566,11 @@ Structs and classes are both ways to define a composite data type with multiple 
 
 ### Ascii Table = 819 (Problem Solving and Program Design in C)
 
+# TODO:
+### Recursion = 542 (Problem Solving and Program Design in C)
+### Input/Output and Files = 650 (Problem Solving and Program Design in C)
+### Dynamic Data Structures = 736 (Problem Solving and Program Design in C)
+
 ### Danske noter til quiz-delen af Kurts videoer
 - Imperativ betyder at befale (kommandere)
 - En statement er en kommando, osm gør noget
@@ -631,8 +636,3 @@ En tom streng er et array med mindst et element, hvor det første tegn er \0.
 - Intersection typer findes ikke i C
 	
 - Infix operatorer = operatorer i midten af operander (f.eks. binær operatorer, ternære operatorer (? :) )
-
-# TODO:
-### Recursion = 542 (Problem Solving and Program Design in C)
-### Input/Output and Files = 650 (Problem Solving and Program Design in C)
-### Dynamic Data Structures = 736 (Problem Solving and Program Design in C)
