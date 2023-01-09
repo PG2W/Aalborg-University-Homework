@@ -150,6 +150,7 @@ for (int i = 0, j = 10; i <= j; i++, j--)
 
 ### Parameters
 - Functions with Output Parameters
+
 *Problem solving and Program design in C - 343*
 
 Examples from P1 and other assignments:
@@ -208,6 +209,7 @@ static void scan_data(char *user_input, char *operator_output, double *operand_o
 }
 ```
 - Call by reference vs Call by value
+
 Call by reference allows manipulating the addresses to the variables being called (by reference)
 where as calling by value, you'd pass in values not neccessarily having any affect on their values at their addresses.
 
@@ -220,6 +222,7 @@ Example: int * p;
 "The value of the pointer variable p is a memory address. A data item whose address is stored in this variable must be of the specified type." - *Problem Solving and Problem Design in C*
 
 - Pointers to Files
+
 miniproject3.c:
 ```C
 char filename[] = "kampe-2020-2021.txt"; //Defining file name
@@ -261,6 +264,7 @@ int main(void){
 ```
 
 - Arrays in C
+
 An array is a collection of elements of the same type stored in contiguous memory locations.
 
 Arrays can have one or multiple dimensions.
@@ -281,6 +285,7 @@ arr[3] = 2.5; // Assigns the value 2.5 to the fourth element of the array "arr"
 The index of an array always starts at 0 in C.
 
 - Pointers and arrays
+
 In C, arrays and pointers are closely related. In fact, when an array is passed to a function or assigned to another array, it is actually the address of the first element of the array that is being passed or assigned.
 
 When you declare a pointer to a certain type, you can use it to point to an array of that type. For example:
@@ -296,6 +301,7 @@ When you access an element of an array through a pointer, you can use the derefe
 ```
 
 - Pointer arithmetic
+
 In C, you can perform arithmetic operations on pointers, just like you can with any other type of variable.
 
 For example, you can increment a pointer to point to the next element of an array. If the pointer is pointing to an element of type T, the increment will be T bytes (T is the size of the type in bytes). For example:
@@ -309,6 +315,7 @@ int distance = ptr2 - ptr1; // Calculates the distance (in elements) between the
 ```
 
 - Sorting arrays:
+
 There are several ways to sort an array in C. One of the most popular is the quicksort algorithm, which has an average case time complexity of O(n*log(n)).
 
 Here is an example of how you can use the quicksort function from the standard library:
@@ -439,6 +446,7 @@ Test timeout computed to be: 10000000
 
 ### Datatypes
 - Enumeration types
+
 Enumeration types are custom types that can be used to create types. Consider the following example;
 Problem solving and Program Design in C:
 ```C
@@ -488,6 +496,7 @@ So in essence it provides a way to change the name of the type. It can also be u
 
 ### Datastructures
 - Records/Structures
+
 A record (also known as a structure or struct) is a composite data type in C that groups together values of different types.
 To define a struct in C, you use the struct keyword followed by the name of the struct and the definition of its fields inside curly braces. Each field has a name and a type. For example:
 ```C
@@ -502,6 +511,7 @@ struct Example ex;
 ```
 
 - Different variants of structs (unions, structs with bitfilter)
+
 There are several variants of structs in C, each with its own specific purpose and characteristics:
 Unions: A union is a special type of struct that allows you to store multiple variables of different types in the same memory location. This is useful when you need to save memory or when you want to manipulate the same memory location in different ways. To define a union, you use the union keyword instead of the struct keyword. For example:
 ```C
@@ -523,6 +533,7 @@ struct Flags {
 ```
 
 - Arrays of structs and structs with arrays
+
 You can use arrays of structs to store a collection of struct values in contiguous memory locations. To create an array of structs, you can use the same syntax as for any other array, but replacing the type with the name of the struct. For example:
 ```C
 struct Example example[10]; // Declares an array "example" of 10 structs of type "Example"
@@ -552,4 +563,5 @@ struct curve {
 ```
 
 - Relation between structs and classes in OOP
+
 Structs and classes are both ways to define a composite data type with multiple fields of different types. However, structs in C are not considered object-oriented programming (OOP). They just allow you to group values together.
