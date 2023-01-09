@@ -630,7 +630,7 @@ En tom streng er et array med mindst et element, hvor det første tegn er \0.
 - En union er en struct hvor kun et af felterne er repræsenteret, og hvor der er afsat plads til den største af felterne.
 - Intersection typer findes ikke i C
 
-TODO:
+# TODO:
 ### Recursion = 542 (Problem Solving and Program Design in C)
 ### Input/Output and Files = 650 (Problem Solving and Program Design in C)
 ### Dynamic Data Structures = 736 (Problem Solving and Program Design in C)
