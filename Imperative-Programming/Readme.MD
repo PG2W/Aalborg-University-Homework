@@ -566,6 +566,47 @@ Structs and classes are both ways to define a composite data type with multiple 
 
 ### Ascii Table = 819 (Problem Solving and Program Design in C)
 
+### Danske noter til quiz-delen af Kurts videoer
+- Imperativ betyder at befale (kommandere)
+- En statement er en kommando, osm gør noget
+- Kommandoer er eksempelvis et assignment og et kald af printf
+- En procedure abstraherer over kommandoer
+- Forbindelsen mellem imperativ programmering og kontrolstrukturer er at der kontrolleres den rækkefølge hvori kommandoerne udføres.
+
+- Iterative kontrolstrukturer er løkker
+- While løkker muliggør 0, 1 eller flere gennemløb af kommendoen i kroppen af løkken
+- While-løkken afsluttes første gang de logiske udtryk, som styrer løkken, bliver false
+- Det logiske udtryk, som styrer while-løkken, skal stå i et parentespar i C
+- En for kontrolstruktur er opbygget af tre udtryk og en kommando
+- Komma-operatoren forekommer i "for" kontrolstrukturen.
+
+- Den øvre grænse i <array> = størrelsen - 1
+- Et array kan ikke overføres som værdi-parameter til en funktion (med henblik på at kopiere alle elementer fra den aktuelle parameter til den formelle parameter)
+
+Det betyder at man ikke direkte kan sende et array til en funktion og forvente at alle elementer i arrayet vil blive kopieret til en ny array inde i funktionen. I stedet vil det array, der sendes til funktionen, blot blive refereret til som en pointer. 
+- Man kan ikke returnere en lokal array i en funktion med henblik på at kopier alle elementer tilbage til kaldstedet.
+- Et array kan ikke assignes til et andet array
+- Index out of bounds = man prøver at tilgå noget uden for index grænserne af et array
+- Dynamisk lagerallokering = malloc, calloc fra stdlib som stilles til rådighed via en pointer
+
+- Typer gør det muligt for compileren at generere bedre og mere effektivt kode
+- Typer gør det muligt at opdage fejl i programmet, typisk under oversættelse
+- Typer forbedrer programmets læsbarhed og forståelighed
+
+- Nogle typer i ANSI C89
+
+char, int, double, float, unsigned long int, long double
+
+- Enumeration typer bruges til at indføre symbolske navne (konstanter) for endelig mængde af heltal.
+
+- Typecast er en eksplicit typekonvertering, der noteres som (Type)Utryk
+
+- Heltalstyper: (Integer types eller integral types):
+
+short, short int, long, long int, char, unsigned int, signed long int
+
+Talkonstanten 012LU = Heltallet med ciferene 1 og 2 i oktal notation, i typen unsigned long int. Værdien der med %li i printf er 10, fordi 12 i oktal er 10 i decimalt.
+
 
 TODO:
 ### Recursion = 542 (Problem Solving and Program Design in C)
