@@ -565,3 +565,8 @@ struct curve {
 - Relation between structs and classes in OOP
 
 Structs and classes are both ways to define a composite data type with multiple fields of different types. However, structs in C are not considered object-oriented programming (OOP). They just allow you to group values together.
+
+TODO:
+### Recursion = 542 (Problem Solving and Program Design in C)
+### Input/Output and Files = 650 (Problem Solving and Program Design in C)
+### Dynamic Data Structures = 736 (Problem Solving and Program Design in C)
