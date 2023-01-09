@@ -528,7 +528,7 @@ struct Flags {
     unsigned int flag1: 1;
     unsigned int flag2: 1;
     unsigned int flag3: 1;
-    unsigned int : 5; // Padding field, not used
+    unsigned int : 5;
 };
 ```
 
