@@ -594,16 +594,14 @@ Det betyder at man ikke direkte kan sende et array til en funktion og forvente a
 - Typer forbedrer programmets læsbarhed og forståelighed
 
 - Nogle typer i ANSI C89
-
-char, int, double, float, unsigned long int, long double
+	char, int, double, float, unsigned long int, long double
 
 - Enumeration typer bruges til at indføre symbolske navne (konstanter) for endelig mængde af heltal.
 
 - Typecast er en eksplicit typekonvertering, der noteres som (Type)Utryk
 
 - Heltalstyper: (Integer types eller integral types):
-
-short, short int, long, long int, char, unsigned int, signed long int
+	short, short int, long, long int, char, unsigned int, signed long int
 
 Talkonstanten 012LU = Heltallet med ciferene 1 og 2 i oktal notation, i typen unsigned long int. Værdien der med %li i printf er 10, fordi 12 i oktal er 10 i decimalt.
 
@@ -621,7 +619,16 @@ Talkonstanten 012LU = Heltallet med ciferene 1 og 2 i oktal notation, i typen un
 
 En tom streng er et array med mindst et element, hvor det første tegn er \0.
 
-
+- Bestanddele i structs = members
+- Structs er typeheterogene (altså: Bestanddelene kan have forskellige typer)
+- Structs lagres i et konsekutivt lagerområde
+- Et felt i en variable af structtype tilgås med direkte komponentselektion (.)
+- Indirekte komponentselektion er ->
+- Lovlige udtryk med struct typer:
+	s1 = s2, &s1, &s1 - &s2, sizeof(s1), sizeof(&s2)
+- Man kan regne adressen på en struct
+- En union er en struct hvor kun et af felterne er repræsenteret, og hvor der er afsat plads til den største af felterne.
+- Intersection typer findes ikke i C
 
 TODO:
 ### Recursion = 542 (Problem Solving and Program Design in C)
