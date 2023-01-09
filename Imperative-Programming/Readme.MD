@@ -524,11 +524,8 @@ union Example {
 
 Bitfields: A bitfield is a special type of struct field that allows you to specify the size of the field in bits. This is useful when you want to store a set of flags or a bitmask in a struct. To define a bitfield, you use the : operator followed by the number of bits you want to allocate for the field. For example:
 ```C
-struct Flags {
-    unsigned int flag1: 1;
-    unsigned int flag2: 1;
-    unsigned int flag3: 1;
-    unsigned int : 5;
+struct Example {
+    int ex: <bytes>;
 };
 ```
 
