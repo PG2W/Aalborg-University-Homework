@@ -348,7 +348,7 @@ Static allocation is done at compile time, and the memory is reserved for the en
 int x = 5; // Allocates 4 bytes of memory for the integer variable "x" and initializes it with the value 5
 ```
 
-Dynamic allocation is done at runtime, and the memory is allocated from the heap (a pool of free memory managed by the program). To allocate memory dynamically, you can use the malloc function from the standard library. This function takes a single argument, which is the size of the memory block in bytes, and returns a pointer to the first byte of the allocated block. For example:
+Dynamic allocation is done at runtime, and the memory is allocated from the heap. To allocate memory dynamically, you can use the malloc function from the standard library. This function takes a single argument, which is the size of the memory block in bytes, and returns a pointer to the first byte of the allocated block. For example:
 ```C
 int *ptr = malloc(sizeof(int)); // Allocates 4 bytes of memory for an integer and returns a pointer to it
 ```
