@@ -566,7 +566,7 @@ struct curve {
 
 Structs and classes are both ways to define a composite data type with multiple fields of different types. However, structs in C are not considered object-oriented programming (OOP). They just allow you to group values together.
 
-### Ascii Table
+### Ascii Table = 819 (Problem Solving and Program Design in C)
 
 
 TODO:
