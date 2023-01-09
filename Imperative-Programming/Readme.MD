@@ -629,6 +629,8 @@ En tom streng er et array med mindst et element, hvor det første tegn er \0.
 - Man kan regne adressen på en struct
 - En union er en struct hvor kun et af felterne er repræsenteret, og hvor der er afsat plads til den største af felterne.
 - Intersection typer findes ikke i C
+	
+	- Infix operatorer = operatorer i midten af operander (f.eks. binær operatorer, ternære operatorer (? :) )
 
 # TODO:
 ### Recursion = 542 (Problem Solving and Program Design in C)
