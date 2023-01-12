@@ -564,12 +564,113 @@ struct curve {
 
 Structs and classes are both ways to define a composite data type with multiple fields of different types. However, structs in C are not considered object-oriented programming (OOP). They just allow you to group values together.
 
-### Ascii Table = 819 (Problem Solving and Program Design in C)
+### Recursion
+Recursion is a technique in which a function calls itself, either directly or indirectly.
+The base case, or termination condition, is a specific set of input(s) for which the function does not call itself, and instead returns a value or performs a specific action.
+Every recursive function has at least one base case and at least one recursive case.
+The recursive case is when the function calls itself with slightly modified input(s).
+It is important to ensure that the base case will be reached eventually, otherwise the program will enter into an infinite loop.
+Recursive functions can be more difficult to understand and debug than iterative functions, but they can also be more elegant and expressive.
 
-# TODO:
-### Recursion = 542 (Problem Solving and Program Design in C)
-### Input/Output and Files = 650 (Problem Solving and Program Design in C)
-### Dynamic Data Structures = 736 (Problem Solving and Program Design in C)
+A classic example of recursion is the factorial function, which is defined as the product of all positive integers less than or equal to n:
+
+```C
+int factorial(int n) {
+    if (n == 0) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+```
+
+Recursion can be applied to several problem like traversing tree, traversing graph, divide and conquer algo, backtracking, memoization and many more.
+
+### Input/Output and Files
+Input/output in C is performed using a set of functions defined in the stdio.h library.
+The most commonly used I/O functions are printf() and scanf() for output and input, respectively.
+printf is used to print the output on the screen, scanf is used to take input from the user.
+The fprintf() and fscanf() functions are similar to printf() and scanf(), respectively, but allow you to specify a stream (such as a file) to read from or write to.
+You can open a file using the fopen() function, which returns a pointer to a FILE object. This pointer can then be used to read from or write to the file using other f*() functions such as fgets(), fputs(), fread(), fwrite(), etc.
+To close a file, you can use the fclose() function.
+It's important to check the returned value of fopen for NULL, indicating failure to open file, before performing any operation on it.
+fseek() is a function which is used to move the reading/writing position to a specific location within the file.
+rewind() is used to reset the position of the file pointer to the beginning of the file.
+C standard I/O functions are buffered, mean it stores data temporarily in a buffer before sending it to the file or reading it from the file.
+
+Example show how to read a file line by line:
+```C
+#include <stdio.h>
+
+int main(void) {
+    FILE *fp;
+    char buffer[256];
+
+    fp = fopen("example.txt", "r");
+    if (fp == NULL) {
+        perror("Error opening file");
+        return(-1);
+    }
+
+    while (fgets(buffer, sizeof(buffer), fp) != NULL) {
+        printf("%s", buffer);
+    }
+
+    fclose(fp);
+    return 0;
+}
+
+```
+
+### Dynamic Data Structures
+In C, data structures such as arrays and linked lists can be created dynamically at runtime, rather than being declared and initialized at compile-time.
+The malloc() function is used to dynamically allocate memory on the heap. It takes a single argument, which is the number of bytes of memory to allocate. It returns a pointer to the first byte of the allocated memory, or NULL if the allocation failed.
+```C
+int *p = (int *) malloc(sizeof(int)); // allocate memory for an integer
+```
+
+The calloc() function is similar to malloc(), but it also initializes the allocated memory to zero.
+```C
+int *p = (int *) calloc(10, sizeof(int)); // allocate memory for an array of 10 integers and set them all to zero
+```
+
+The realloc() function is used to change the size of a previously allocated block of memory. It takes two arguments: a pointer to the memory block to be resized, and the new size in bytes. It returns a pointer to the resized memory block, or NULL if the operation failed.
+```C
+p = (int *) realloc(p, sizeof(int) * 20); // resize the memory block to hold 20 integers
+```
+
+The free() function is used to deallocate memory that was previously allocated with malloc(), calloc(), or realloc().
+
+Example of a simple dynamic array implementation:
+```C
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int capacity = 10;
+    int size = 0;
+    int *arr = (int *)malloc(capacity * sizeof(int)); // initially allocate memory for 10 integers
+
+    for (int i = 0; i < 20; i++) {
+        if (size == capacity) {
+            capacity *= 2;
+            arr = (int *)realloc(arr, capacity * sizeof(int)); // double the capacity if full
+        }
+        arr[size++] = i; // insert an element
+    }
+
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    free(arr); // deallocate memory
+    return 0;
+}
+```
+
+
+
+### Ascii Table = 819 (Problem Solving and Program Design in C)
 
 ### Danske noter til quiz-delen af Kurts videoer
 - Imperativ betyder at befale (kommandere)
