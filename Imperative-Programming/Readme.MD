@@ -65,6 +65,8 @@ double trap(double a, double b, int n, binary_f f, function_flag flag)
 - stdlib.h
 - stdbool.h etc..
 
+## Danish Notes from Lectures
+
 **Lektion 2: Introduktion til C (9.9.2022)**
 
 Lektion 2 er en introduktion til C programmering. Emnerne, der vil blive dækket, inkluderer variable, erklæringer og initialisering.
