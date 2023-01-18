@@ -67,7 +67,7 @@ double trap(double a, double b, int n, binary_f f, function_flag flag)
 
 ## Danish Notes from Lectures
 
-**Lektion 2: Introduktion til C (9.9.2022)**
+### **Lektion 2: Introduktion til C (9.9.2022)**
 
 Lektion 2 er en introduktion til C programmering. Emnerne, der vil blive dækket, inkluderer variable, erklæringer og initialisering.
 
@@ -83,7 +83,7 @@ Udtryk og operatorer bruges til at udføre beregninger og sammenligninger i et p
 
 Så til sidst, printf og scanf er bibliotekfunktioner, der bruges til at udskrive og indlæse data fra brugeren. printf bruges til at udskrive en tekststreng eller en variabel på skærmen, mens scanf bruges til at læse input fra brugeren og gemme det i en variabel. Disse funktioner er vigtige for at lave interaktive programmer, der kan kommunikere med brugeren.
 
-**Lektion 3: Selektive kontrolstrukturer (14.9.2022)**
+### **Lektion 3: Selektive kontrolstrukturer (14.9.2022)**
 
 I denne lektion har vi studeret selektive kontrolstrukturer i C-programmering. Vi har set på logiske udtryk og boolean datatypen, som kan evalueres til enten sandt eller falsk. Vi har set på if-statements, som giver mulighed for at udføre en bestemt handling, hvis en bestemt betingelse er opfyldt.
 
@@ -132,7 +132,7 @@ Her vil det første printf udskrive "x + y = 15" og det andet udskrive "x = 10" 
 
 Alt i alt har vi set på de forskellige selektive kontrolstrukturer, der er tilgængelige i C, og hvordan de kan anvendes i koden for at gøre det mere interaktivt og effektivt.
 
-****Lektion 4: Iterative kontrolstrukturer  (16.9.2022)****
+### **Lektion 4: Iterative kontrolstrukturer  (16.9.2022)**
 
 I denne lektion har vi studeret iterative kontrolstrukturer i C-programmering. Disse strukturer giver mulighed for at gentage en sektion af koden, indtil en bestemt betingelse er opfyldt.
 
@@ -218,7 +218,7 @@ Her vil det udskrive tal fra 1 til 9, fordi continue springer over alle lige tal
 
 Alt i alt har vi set på de forskellige iterative kontrolstrukturer, der er tilgængelige i C, og hvordan de kan anvendes i koden for at gøre det mere effektivt og automatisere Gentagende opgaver. Vi har også set på Euclids algoritme, komma operatoren, klassificering af gentagelser, hop med break og continue, som er nyttige værktøjer for at skrive komplekse og effektive programmer.
 
-**Lektion 5: Funktioner og top-down programmering (21.9.2022)**
+### **Lektion 5: Funktioner og top-down programmering (21.9.2022)**
 
 I denne lektion har vi studeret brugen af funktioner og top-down programmering i C-programmering. Funktioner giver mulighed for at opdele et program i mindre, genanvendelige dele, hvilket gør det nemmere at forstå og vedligeholde.
 
@@ -234,7 +234,7 @@ Vi har også set på del og hersk (del og kombiner) metoden, som er en måde at 
 
 Alt i alt har vi i denne lektion set på, hvordan funktioner kan anvendes til at gøre koden mere overskuelig og effektiv, ved at opdele den i mindre, genanvendelige dele. Vi har også set på metoder til at løse komplekse problemer ved hjælp af abstraktion, top-down programmering og del og hersk metoden.
 
-**Lektion 6: Funktioner og parametre (7.10.2022)**
+### **Lektion 6: Funktioner og parametre (7.10.2022)**
 
 I denne lektion har vi introduceret begrebet pointere i C-programmering. Pointere er variable, der gemmer en adresse i hukommelsen og giver mulighed for at referere til en anden variable.
 
@@ -260,7 +260,7 @@ Vi har også set på pointere til funktioner, som giver mulighed for at gemme ad
 
 Alt i alt har vi i denne lektion set på, hvordan pointere og call by reference parametre kan anvendes i C-programmering for at gøre koden mere fleksibel og effektiv. Pointere giver mulighed for at referere til andre variable, mens call by reference parametre giver mulighed for at ændre værdien af de originale variable inde i funktionen og pointere til funktioner giver mulighed for at gemme en funktion i en variabel og derefter kalde den senere eller vælge en funktion baseret på en bestemt betingelse.
 
-**Lektion 7: Arrays og Pointere (3.10.2022)**
+### **Lektion 7: Arrays og Pointere (3.10.2022)**
 
 I denne lektion har vi set på brugen af arrays og pointere i C-programmering, med både eksempler og forklaringer.
 
@@ -324,7 +324,7 @@ free(array);
 
 Dette er vigtigt at huske for at undgå memory leaks og for at optimere brugen af hukommelsen i programmet.
 
-**Lektion 8: Datatyper og Test (26.10.2022)**
+### **Lektion 8: Datatyper og Test (26.10.2022)**
 
 I denne lektion har vi set på datatyper og test i C-programmering.
 Vi har set på en oversigt over de forskellige datatyper i C, herunder de primitive datatyper som int, char, og float, samt de mere avancerede datatyper som pointers, arrays, og structs.
@@ -367,7 +367,7 @@ Vi har også set på debugging værktøjer som breakpoints, stepping through cod
 Vi har set på testing teknikker som unit testing, integration testing, og system testing for at sikre at programmet fungerer som forventet.
 Alt i alt, har vi i denne lektion set på væsentlige emner som datatyper og test, som er vigtige for at skrive korrekt og robust kode i C-programmering.
 
-**Lektion 9: Tegn og Tekststrenge (28.10.2022)**
+### **Lektion 9: Tegn og Tekststrenge (28.10.2022)**
 
 I denne lektion har vi set på datatypen char og tekststrenge i C-programmering.
 
@@ -391,7 +391,7 @@ Vi har også set på eksempler på programmer, der behandler tekst, som kan omfa
 
 Alt i alt, har vi i denne lektion set på væsentlige emner som datatypen char og tekststrenge i C-programmering, samt de funktioner og metoder, der er tilgængelige for at arbejde med tekst i C. Det er vigtigt at have en grundig forståelse af disse emner for at skrive effektiv og robust kode, der kan håndtere tekst data.
 
-**Lektion 10: Datastrukturer - Structs (2.11.2022)**
+### **Lektion 10: Datastrukturer - Structs (2.11.2022)**
 
 I denne lektion har vi set på datastrukturer, specifikt structs, i C-programmering.
 
@@ -413,7 +413,7 @@ Vi har også kort nævnt forholdet mellem structs og classes i objekt-orientered
 
 Alt i alt, har vi i denne lektion set på væsentlige emner som datastrukturer og structs i C-programmering, samt varianterne af structs og deres anvendelser i at organisere og håndtere data i C. Det er vigtigt at have en grundig forståelse af disse emner for at skrive effektiv og organiseret kode i C.
 
-**Lektion 11: Rekursion (4.11.2022)**
+### **Lektion 11: Rekursion (4.11.2022)**
 
 I denne lektion har vi set på rekursive procedurer og funktioner i C-programmering.
 
@@ -434,7 +434,7 @@ Vi har set på eksempler på meget hurtige og meget langsomme rekursive algoritm
 
 Alt i alt, har vi i denne lektion set på væsentlige emner som rekursive procedurer og funktioner i C-programmering, samt metoder til at løse problemer ved hjælp af rekursion og deres påvirkning på ydeevnen af programmet. Det er vigtigt at have en grundig forståelse af rekursion og dens brug for at skrive effektiv og organiseret kode i C.
 
-**Lektion 12: Input/output og Filer (9.11.2022)**
+### **Lektion 12: Input/output og Filer (9.11.2022)**
 
 I denne lektion har vi set på filbegreber. Vi lærte om forskellen mellem tekstfiler og binære filer, og hvordan de håndteres forskelligt. Vi lærte også om sekventielle filer og random access filer og hvordan de kan bruges til forskellige formål.
 
@@ -462,7 +462,7 @@ printf("Din alder er: %d år", alder);
 
 Alt i alt, var det en informativ lektion hvor vi fordybede os i filbegreber, input/output og C-programmering.
 
-****Lektion 13: Dynamiske datastrukturer - lister og træer (11.11.2022)****
+### **Lektion 13: Dynamiske datastrukturer - lister og træer (11.11.2022)**
 
 I denne lektion, den 11. november 2022, har vi set på dynamiske datastrukturer, som er datastrukturer, der kan ændre størrelse og form under kørslen. Vi har fokuseret på lister og træer, som er to af de mest almindelige dynamiske datastrukturer.
 
