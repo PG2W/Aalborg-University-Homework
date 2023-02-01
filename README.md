@@ -6,7 +6,7 @@ My finalised notes and assignments for software related courses at Aalborg Unive
 
 [Imperative Programming Notes](https://github.com/emil0212/Aalborg-University-Homework/tree/main/Imperative-Programming)
 
-[Internetworking and Web-programming Notes]()
+[Internetworking and Web-programming Notes](https://github.com/emil0212/Aalborg-University-Homework/tree/main/Internetworking-and-web-programming)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
