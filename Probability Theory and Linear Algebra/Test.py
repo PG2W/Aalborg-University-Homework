@@ -1,16 +1,16 @@
-import numpy as np
+A = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+B = [1, 2, 3, 4, 5, 6, 7, 8, 10]
 
-# Scalar
-s = 2
+def exercisefive(List1, List2):
+    if (len(List1) != len(List2)):
+        return None
+    
+    for i in range(len(List1)):
+        if List1[i] != List2[i]:
+            return False
+    
+    return True
 
-# Test numpy variables
-a = np.array([1, 2, 3])
-b = np.array([4, 5, 6])
+print(exercisefive(A, B))
 
-# Scalar-Vector Multiplication of a and b
-c = s * a * b
-print("Scalar-Vector multiplication of a and b = ", c)
 
-# Inner product of a and b
-d = np.inner(a, b)
-print("Inner product of a and b = ", d)
