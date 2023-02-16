@@ -1,17 +1,4 @@
-import numpy as numpy
-
-A = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-B = [1, 2, 3, 4, 5, 6, 7, 8, 10]
-
-def exercisefive(List1, List2):
-    if (len(List1) != len(List2)):
-        return None
-    
-    for i in range(len(List1)):
-        if List1[i] != List2[i]:
-            return False
-    
-    return True
+import numpy
 
 def gs_cofficient(v1, v2):
     return numpy.dot(v2, v1) / numpy.dot(v1, v1)
@@ -22,6 +9,7 @@ def multiply(cofficient, v):
 def proj(v1, v2):
     return multiply(gs_cofficient(v1, v2) , v1)
 
+# gram-schmidt algoritmen
 def gs(X, row_vecs=True, norm = True):
     if not row_vecs:
         X = X.T
@@ -35,9 +23,4 @@ def gs(X, row_vecs=True, norm = True):
         return Y
     else:
         return Y.T
-
-test = numpy.array([[1.0, 0.0, 0.0], [1.0, 1.0, 0.0], [1.0, 1.0, 1.0]])
-
-print(numpy.array(gs(test)))
-
-
+        
