@@ -75,7 +75,6 @@ export default class Tools {
   }
 
   createAgentModifiers() {
-    // Amount of agents input
     const amountInput = document.createElement("input");
     amountInput.type = "number";
     amountInput.placeholder = "Amount of agents";
@@ -83,7 +82,6 @@ export default class Tools {
     amountInput.classList.add("agent-modifier-input");
     this.agentsSubmenu.appendChild(amountInput);
   
-    // Velocity of agents input
     const velocityInput = document.createElement("input");
     velocityInput.type = "number";
     velocityInput.placeholder = "Velocity of agents";
@@ -92,16 +90,14 @@ export default class Tools {
     velocityInput.classList.add("agent-modifier-input");
     this.agentsSubmenu.appendChild(velocityInput);
   
-  // Spawn position of agents button
   const spawnPositionButton = document.createElement("button");
   spawnPositionButton.classList.add("agent-modifier-btn");
   spawnPositionButton.textContent = "Spawn position of agents";
   spawnPositionButton.addEventListener("click", (e) => {
     this.setSpawnPositionMode(true);
   });
-  this.agentsSubmenu.appendChild(spawnPositionButton);
 
-    // Spawn agents button
+  this.agentsSubmenu.appendChild(spawnPositionButton);
     const spawnAgentsButton = document.createElement("button");
     spawnAgentsButton.classList.add("agent-modifier-btn");
     spawnAgentsButton.textContent = "Spawn agents";
@@ -194,7 +190,7 @@ export default class Tools {
     const rect = this.canvas.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    const radius = 50; // You can adjust the radius as needed
+    const radius = 50;
   
     this.spawnAreaCircle = { x, y, radius };
   
@@ -208,7 +204,7 @@ export default class Tools {
     this.redrawGridAndAgents();
     this.ctx.beginPath();
     this.ctx.arc(this.spawnAreaCircle.x, this.spawnAreaCircle.y, this.spawnAreaCircle.radius, 0, 2 * Math.PI);
-    this.ctx.fillStyle = "rgba(255, 255, 0, 0.5)"; // Yellow transparent color
+    this.ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
     this.ctx.fill();
     this.ctx.closePath();
   }
@@ -224,6 +220,5 @@ export default class Tools {
   
   spawnAgents() {
     console.log("Spawn agents");
-    // Implement agent spawning logic here
   }
 }
