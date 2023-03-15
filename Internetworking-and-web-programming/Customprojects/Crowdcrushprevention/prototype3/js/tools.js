@@ -90,11 +90,11 @@ export default class Tools {
     velocityInput.classList.add("agent-modifier-input");
     this.agentsSubmenu.appendChild(velocityInput);
   
-  const spawnPositionButton = document.createElement("button");
-  spawnPositionButton.classList.add("agent-modifier-btn");
-  spawnPositionButton.textContent = "Spawn position of agents";
-  spawnPositionButton.addEventListener("click", (e) => {
-    this.setSpawnPositionMode(true);
+    const spawnPositionButton = document.createElement("button");
+    spawnPositionButton.classList.add("agent-modifier-btn");
+    spawnPositionButton.textContent = "Spawn position of agents";
+    spawnPositionButton.addEventListener("click", (e) => {
+      this.setSpawnPositionMode(true);
   });
 
   this.agentsSubmenu.appendChild(spawnPositionButton);
