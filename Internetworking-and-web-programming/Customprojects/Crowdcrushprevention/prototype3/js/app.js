@@ -12,7 +12,7 @@ class App {
 
     init() {
       this.grid = new Grid(this.gridCanvas);
-      this.tools = new Tools(this.toolCanvas, this.gridCanvas, this.grid); // Pass both canvases
+      this.tools = new Tools(this.toolCanvas, this.gridCanvas, this.grid);
       this.agents = new Agents(this.gridCanvas, this.grid);
     
       this.registerEventListeners();
