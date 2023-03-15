@@ -1,7 +1,6 @@
 import { Grid } from './grid.js';
 import { Tools } from './tools.js';
 
-
 const gridcanvas = document.getElementById('grid-canvas');
 const toolcanvas = document.getElementById('tool-canvas');
 
